@@ -14,17 +14,16 @@ public:
     Node* child;
 };
  
-// A function to create a linked list
-// with n(size) nodes returns head pointer
+// Fungsi untuk Membuat sebuah linked list dengan n(ukuran) node mengembalikan kepala pointer
+
 Node* createList(int* arr, int n)
 {
     Node* head = NULL;
     Node* tmp;
  
-    // Traversing the passed array
+    // Melintasi array yang dilewati
     for (int i = 0; i < n; i++) {
-        // Creating a node if the list
-        // is empty
+        // Membuat sebuah node jika daftar kosong
         if (head == NULL) {
             tmp = head = new Node();
         }
